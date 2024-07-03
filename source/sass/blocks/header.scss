@@ -1,0 +1,23 @@
+.header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 100px;
+  height: 20px;
+  display: block;
+}
+
+.header__number-phone {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  user-select: none;
+  font-size: 22px;
+  font-weight: 700;
+}
