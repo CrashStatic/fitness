@@ -4,13 +4,16 @@
 @import "vendor/normalize";
 
 /* GLOBAL */
-@import "./common/global.scss";
-@import "./common/viewports.scss";
-@import "./common/fonts.scss";
+@import "./common/global";
+@import "./common/viewports";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/mixins";
 
 /* BLOCKS */
-@import "./blocks/page.scss";
-@import "./blocks/visually-hidden.scss";
-@import "./blocks/page-main.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/header.scss";
+@import "./blocks/page";
+@import "./blocks/visually-hidden";
+@import "./blocks/page-main";
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/promo";
