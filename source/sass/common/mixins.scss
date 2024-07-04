@@ -11,3 +11,11 @@
   line-height: 12px;
   text-transform: uppercase;
 }
+
+@mixin title {
+  font-family: $variable-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+}

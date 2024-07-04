@@ -40,8 +40,8 @@
 
         <header class="header">
           <picture>
-            <source media="(min-width: 1366px)" type="image/webp" srcset="img/logo-desktop.svg" width="130" height="26">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet.svg" width="110" height="22">
+            <source media="(min-width: 1366px)" type="image/svg" srcset="img/logo-desktop.svg" width="130" height="26">
+            <source media="(min-width: 768px)" type="image/svg" srcset="img/logo-tablet.svg" width="110" height="22">
             <img class="header__logo" src="img/logo-mobile.svg" alt="Иконка сайта Supergym" width="100" height="20">
           </picture>
           <a class="header__number-phone" href="tel:88005555555">8&nbsp;800 555-55-55</a>
@@ -66,11 +66,46 @@
             <picture>
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/hero/hero-desktop.webp 1x, img/hero/hero-desktop@2x.webp 2x">
               <source type="image/webp" srcset="img/hero/hero-tablet.webp 1x, img/hero/hero-tablet@2x.webp 2x">
-              <source media="(min-width: 1366px)" type="image/webp" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
-              <img src="img/hero/hero-tablet.jpg" width="324" height="390" srcset="img/hero/hero-tablet@2x.jpg 2x" alt="Изображение тренера">
+              <source media="(min-width: 1366px)" type="image/jpg" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+              <img src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Изображение тренера в&nbsp;костюме супергероя">
             </picture>
           </div>
         </div>
+      </section>
+
+      <section class="about" data-test="about">
+        <div class="about__container">
+          <h2 class="about__title">Тренажёрный зал</h2>
+          <p class="about__subtitle">Просторный зал площадью 900&nbsp;кв/м</p>
+          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+
+        <div class="about__visual-content">
+          <picture>
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/gym-desktop.webp 1x, img/about/gym-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/about/gym-tablet.webp 1x, img/about/gym-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/about/gym-mobile.webp 1x, img/about/gym-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" type="image/jpg" srcset="img/about/gym-desktop.jpg 1x, img/about/gym-desktop@2x.jpg 2x" width="660" height="400">
+            <source media="(min-width: 768px)" type="image/jpg" srcset="img/about/gym-tablet.jpg 1x, img/about/gym-tablet@2x.jpg 2x" width="678" height="345">
+            <img class="about__visual-image" src="img/about/gym-mobile.jpg" srcset="img/about/gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография тренажёрного зала Supergym">
+          </picture>
+          <div class="about__visual-video video">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?si=mxcbLLu_QsfhQLwB" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="320" height="170" loading="lazy" title="Бесплатные интерактивные онлайн-курсы"></iframe>
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/video-preview-desktop.webp 1x, img/about/video-preview-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/about/video-preview-tablet.webp 1x, img/about/video-preview-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/about/video-preview-mobile.webp 1x, img/about/video-preview-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" type="image/jpg" srcset="img/about/video-preview-desktop.jpg 1x, img/about/video-preview-desktop@2x.jpg 2x" width="360" height="230">
+              <source media="(min-width: 768px)" type="image/jpg" srcset="img/about/video-preview-tablet.jpg 1x, img/about/video-preview-tablet@2x.jpg 2x" width="270" height="170">
+              <img class="video__preview-image" src="img/about/video-preview-mobile.jpg" srcset="img/about/video-preview-mobile@2x.jpg 2x" width="320" height="170" alt="Превью видео о&nbsp;тренажёрном зале Supergym">
+            </picture>
+            <button class="video__button" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
+          </div>
+        </div>
+
       </section>
 
     </main>
