@@ -77,8 +77,10 @@
         <div class="about__container">
           <h2 class="about__title">Тренажёрный зал</h2>
           <p class="about__subtitle">Просторный зал площадью 900&nbsp;кв/м</p>
-          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <div class="about__description">
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием <br> для всех спортсменов.</p>
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
         </div>
 
         <div class="about__visual-content">
@@ -91,7 +93,6 @@
             <img class="about__visual-image" src="img/about/gym-mobile.jpg" srcset="img/about/gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография тренажёрного зала Supergym">
           </picture>
           <div class="about__visual-video video">
-            <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?si=mxcbLLu_QsfhQLwB" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="320" height="170" loading="lazy" title="Бесплатные интерактивные онлайн-курсы"></iframe>
             <picture>
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/video-preview-desktop.webp 1x, img/about/video-preview-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/about/video-preview-tablet.webp 1x, img/about/video-preview-tablet@2x.webp 2x">
@@ -102,6 +103,9 @@
             </picture>
             <button class="video__button" type="button">
               <span class="visually-hidden">Воспроизвести видео</span>
+              <svg class="video__button-icon" aria-hidden="true" focusable="false" width="9" height="12">
+                <use href="/__spritemap#sprite-play-icon"></use>
+              </svg>
             </button>
           </div>
         </div>
