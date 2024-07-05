@@ -127,3 +127,27 @@
     margin-top: -85px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 360px;
+    margin-left: -100px;
+    margin-top: -115px;
+  }
+
+  .video__button {
+    width: 72px;
+    height: 72px;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .video__button-icon {
+    width: 15px;
+    height: 17px;
+    margin-left: 4px;
+  }
+}
