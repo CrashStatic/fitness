@@ -5,6 +5,7 @@
   position: relative;
   border-bottom: 2px hsla(0, 0%, 47%, 0.2) solid;
   margin-bottom: 30px;
+  row-gap: 12px;
 }
 
 .tab-button__button {
@@ -27,5 +28,61 @@
     text-decoration-color: #d10a42;
     text-decoration-thickness: 2px;
     text-underline-offset: 9px;
+  }
+
+  &:hover {
+    color: hsla(221, 68%, 20%, 0.7);
+    text-decoration: underline;
+    text-decoration-color: #787878;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+
+  &:focus {
+    outline: none;
+    color: #102654;
+    text-decoration: underline;
+    text-decoration-color: #102654;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+
+  &:disabled {
+    color: #102654;
+    opacity: 0.3;
+    text-decoration: underline;
+    text-decoration-color: hsl(221, 68%, 20%, 0.3);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tab-button {
+    max-width: 310px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .tab-button__button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tab-button {
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .tab-button__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 8px;
+
+    &--active {
+      text-underline-offset: 11px;
+    }
   }
 }
