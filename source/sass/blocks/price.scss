@@ -1,0 +1,15 @@
+.price {
+  background: #f8f9fc;
+}
+
+.price__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 41px 15px 40px;
+}
+
+.price__title {
+  @include title;
+
+  margin-bottom: 31px;
+}

@@ -1,0 +1,31 @@
+.tab-button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 2px hsla(0, 0%, 47%, 0.2) solid;
+  margin-bottom: 30px;
+}
+
+.tab-button__button {
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 0;
+  padding-bottom: 6px;
+  color: hsla(221, 68%, 20%, 0.5);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+
+  &--active {
+    color: #102654;
+    text-decoration: underline;
+    text-decoration-color: #d10a42;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+}

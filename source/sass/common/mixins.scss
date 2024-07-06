@@ -5,11 +5,13 @@
 }
 
 @mixin button {
+  display: block;
   font-family: $main-font;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 @mixin title {

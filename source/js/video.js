@@ -29,7 +29,6 @@ const initVideo = () => {
     videoContainer.classList.add('video--without-background');
     createVideoIframe();
   });
-
 };
 
 export { initVideo };
