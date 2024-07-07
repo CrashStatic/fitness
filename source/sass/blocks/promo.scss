@@ -63,8 +63,12 @@
     color: #103aae;
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: none;
+  }
+
+  &:focus-visible {
     background: hsla(0, 0%, 100%, 0.8);
     border: 2px #000000 solid;
     color: #103aae;

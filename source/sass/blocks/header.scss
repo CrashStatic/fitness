@@ -28,9 +28,13 @@
     color: hsla(224, 61%, 28%, 0.5);
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: none;
-    color: #1c3374;
+  }
+
+  &:focus-visible {
+    color: #1c3374
   }
 
   &:active {

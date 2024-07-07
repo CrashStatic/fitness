@@ -13,9 +13,16 @@
 
 .tab-content__item {
   width: 100%;
-  padding: 51px 42px 50px;
+  padding: 44px 35px 43px;
   background: #ffffff;
   text-align: center;
+  border: 7px solid transparent;
+  pointer-events: all;
+
+  &:has(> .tab-content__button:hover),
+  &:has(> .tab-content__button:focus-visible) {
+    border-image: linear-gradient(97deg, #ed0233 0%, #003eb7 100%) 1;
+  }
 }
 
 .tab-content__title {
@@ -71,6 +78,33 @@
   color: #102654;
   padding: 25px 42px;
   border: 2px #102654 solid;
+
+  &:hover {
+    background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+    border: none;
+    padding: 27px 42px;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #ffffff;
+    border: 2px #000000 solid;
+    background: linear-gradient(97deg, hsla(347, 98%, 47%, 0.8) 0%, hsla(220, 100%, 36%, 0.8) 100%);
+    padding: 25px 42px;
+  }
+
+  &:active {
+    color: hsl(0, 0%, 100%, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -106,7 +140,7 @@
   }
 
   .tab-content__item {
-    padding: 65px;
+    padding: 58px;
   }
 
   .tab-content__title {

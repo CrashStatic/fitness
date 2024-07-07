@@ -68,8 +68,12 @@
     }
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: none;
+  }
+
+  &:focus-visible {
     background: #c8c9cc;
 
     &::after {
