@@ -61,14 +61,26 @@
 }
 
 .tab-content__price-text {
+  display: flex;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
   color: #103aae;
   margin-top: 46px;
   margin-left: 37px;
+  gap: 11px;
   z-index: 1;
-  text-align: start;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: flex;
+    width: 24px;
+    height: 33px;
+    background: url("../__spritemap#sprite-ruble-icon-view");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .tab-content__button {
@@ -167,6 +179,12 @@
     line-height: 90px;
     margin-top: 60px;
     margin-left: 42px;
+    gap: 15px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+    }
   }
 
   .tab-content__price-ruble {
@@ -193,7 +211,7 @@
         background-position: center;
         transform: rotate(330deg);
         right: -195px;
-        bottom: -93px;
+        bottom: -92px;
         z-index: -1;
       }
     }
@@ -219,5 +237,9 @@
 
   .tab-content__price-text {
     margin-left: 32px;
+
+    &--indent {
+      margin-top: 61.4px;
+    }
   }
 }
