@@ -101,7 +101,7 @@
     width: 100%;
     padding: 0;
     display: grid;
-    grid-template-rows: 20px 12px minmax(39px, 1fr) 22px;
+    grid-template-rows: min-content 12px minmax(39px, 1fr) 22px;
     column-gap: 15px;
 
     span {
@@ -215,7 +215,7 @@
     max-width: 360px;
     gap: 0;
     grid-template-columns: 1fr 210px;
-    grid-template-rows: 22px 8px minmax(39px, 1fr) 22px;
+    grid-template-rows: min-content 8px minmax(39px, 1fr) 22px;
 
     span {
       grid-column: 1 / 2;
