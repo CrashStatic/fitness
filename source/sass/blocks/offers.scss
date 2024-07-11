@@ -54,10 +54,49 @@
   text-decoration-color: #1c3374;
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
+  padding: 7px 9px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #1c3374;
+    text-decoration: none;
+  }
+
+  &:active {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: #1c3374;
+  }
 
   &--main {
     color: #ffffff;
     text-decoration-color: #ffffff;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 1px solid #ffffff;
+      text-decoration: none;
+    }
+
+    &:active {
+      outline: none;
+      text-decoration: underline;
+      text-decoration-color: #ffffff;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
@@ -82,7 +121,7 @@
 .offers__promotion {
   width: 100%;
   border: 7px solid transparent;
-  border-image: linear-gradient(149deg, #ed0233 0%, #003eb7 100%) 1;
+  border-image: linear-gradient(149deg, #d10a42 1%, #00359f 100%) 1;
   padding: 21px 20px;
   text-align: center;
 

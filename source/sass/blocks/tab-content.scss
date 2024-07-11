@@ -21,7 +21,7 @@
 
   &:has(> .tab-content__button:hover),
   &:has(> .tab-content__button:focus-visible) {
-    border-image: linear-gradient(149deg, #ed0233 0%, #003eb7 100%) 1;
+    border-image: linear-gradient(149deg, #d10a42 0%, #00359f 100%) 1;
   }
 }
 
@@ -92,7 +92,7 @@
   border: 2px #102654 solid;
 
   &:hover {
-    background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(97deg, #ed0233 18%, #003eb7 95%);
     color: #ffffff;
     border: none;
     padding: 27px 42px;
@@ -106,7 +106,7 @@
   &:focus-visible {
     color: #ffffff;
     border: 2px #000000 solid;
-    background: linear-gradient(97deg, hsla(347, 98%, 47%, 0.8) 0%, hsla(220, 100%, 36%, 0.8) 100%);
+    background: linear-gradient(97deg, hsla(347, 98%, 47%, 0.8) 18%, hsla(220, 100%, 36%, 0.8) 95%);
     padding: 25px 42px;
   }
 
