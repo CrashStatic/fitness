@@ -25,8 +25,7 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
+    <!-- <div data-test="offers">offers</div>
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
@@ -42,7 +41,7 @@
           <picture>
             <source media="(min-width: 1366px)" type="image/svg" srcset="img/logo-desktop.svg" width="130" height="26">
             <source media="(min-width: 768px)" type="image/svg" srcset="img/logo-tablet.svg" width="110" height="22">
-            <img class="header__logo" src="img/logo-mobile.svg" alt="Иконка сайта Supergym" width="100" height="20">
+            <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип сайта Supergym" width="100" height="20">
           </picture>
           <a class="header__number-phone" href="tel:88005555555">8&nbsp;800 555-55-55</a>
         </header>
@@ -239,7 +238,7 @@
               <source type="image/webp" srcset="img/games/crossfit-man-mobile.webp 1x, img/games/crossfit-man-mobile@2x.webp 2x">
               <source media="(min-width: 1366px)" type="image/jpg" srcset="img/games/crossfit-man-desktop.jpg 1x, img/games/crossfit-man-desktop@2x.jpg 2x" width="660" height="500">
               <source media="(min-width: 768px)" type="image/jpg" srcset="img/games/crossfit-man-tablet.jpg 1x, img/games/crossfit-man-tablet@2x.jpg 2x" width="378" height="348">
-              <img class="games__image-image" src="img/games/crossfit-man-mobile.jpg" srcset="img/games/crossfit-man-mobile@2x.jpg 2x" width="290" height="290" alt="Фотография участника соревнования по&nbsp;CrossFit">
+              <img src="img/games/crossfit-man-mobile.jpg" srcset="img/games/crossfit-man-mobile@2x.jpg 2x" width="290" height="290" alt="Фотография участника соревнования по&nbsp;CrossFit">
             </picture>
           </div>
         </div>
@@ -435,6 +434,42 @@
               <p>лет</p>
               <h3>Тренерский опыт</h3>
               <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers" data-test="offers">
+        <h2 class="offers__title">Акции</h2>
+        <div class="offers__container">
+          <div class="offers__main-promotion">
+            <div class="offers__info">
+              <h3>Год</h3>
+              <span>4999</span>
+              <p>Безлимитный абонемент в&nbsp;тренажёрный зал</p>
+              <a class="offers__link offers__link--main" href="#">Подробнее</a>
+            </div>
+            <div class="offers__image">
+              <picture>
+                <source media="(min-width: 1366px)" type="image/webp" srcset="img/offers/offers-girl-desktop.webp 1x, img/offers/offers-girl-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/offers/offers-girl-tablet.webp 1x, img/offers/offers-girl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/offers/offers-girl-mobile.webp 1x, img/offers/offers-girl-mobile@2x.webp 2x">
+                <source media="(min-width: 1366px)" type="image/jpg" srcset="img/offers/offers-girl-desktop.jpg 1x, img/offers/offers-girl-desktop@2x.jpg 2x" width="560" height="460">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/offers/offers-girl-tablet.jpg 1x, img/offers/offers-girl-tablet@2x.jpg 2x" width="400" height="462">
+                <img src="img/offers/offers-girl-mobile.jpg" srcset="img/offers/offers-girl-mobile@2x.jpg 2x" alt="Девушка на тренировке" width="320" height="360">
+              </picture>
+            </div>
+          </div>
+          <div class="offers__different-promotion">
+            <div class="offers__promotion">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+              <a class="offers__link" href="#">Подробнее</a>
+            </div>
+            <div class="offers__promotion">
+              <h3>Скидка&nbsp;20%</h3>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
+              <a class="offers__link" href="#">Подробнее</a>
             </div>
           </div>
         </div>
