@@ -98,7 +98,7 @@
 
   color: #ffffff;
   padding: 22px 40px;
-  border: 2px #ffffff solid;
+  border: 2px solid #ffffff;
   text-align: center;
 
   &:hover {
@@ -113,7 +113,7 @@
 
   &:focus-visible {
     background: hsla(0, 0%, 100%, 0.8);
-    border: 2px #000000 solid;
+    border: 2px solid #000000;
     color: #103aae;
   }
 
@@ -122,7 +122,8 @@
     color: #102654;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
   }
 }

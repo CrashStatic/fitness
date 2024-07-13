@@ -43,7 +43,8 @@
     text-underline-offset: 6px;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
   }
 }

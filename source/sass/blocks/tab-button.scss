@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  border-bottom: 2px hsla(0, 0%, 47%, 0.2) solid;
+  border-bottom: 2px solid hsla(0, 0%, 47%, 0.2);
   margin-bottom: 30px;
   row-gap: 12px;
 }
@@ -22,14 +22,6 @@
   user-select: none;
   background: none;
 
-  &--active {
-    color: #102654;
-    text-decoration: underline;
-    text-decoration-color: #d10a42;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 9px;
-  }
-
   &:hover {
     color: hsla(221, 68%, 20%, 0.7);
     text-decoration: underline;
@@ -47,6 +39,15 @@
     color: #102654;
     text-decoration: underline;
     text-decoration-color: #102654;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+
+  &--active,
+  &:active {
+    color: #102654;
+    text-decoration: underline;
+    text-decoration-color: #d10a42;
     text-decoration-thickness: 2px;
     text-underline-offset: 9px;
   }
