@@ -3,9 +3,9 @@
   padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .faq-button__button {
@@ -46,5 +46,20 @@
 
   &:disabled {
     color: #c8c9cc;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq-button {
+    width: 768px;
+    padding: 0 45px;
+    margin-bottom: 45px;
+  }
+
+  .faq-button__button {
+    width: 162px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 17px 28px;
   }
 }

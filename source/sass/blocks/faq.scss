@@ -1,11 +1,23 @@
 .faq {
   background: #f8f9fc;
-  padding: 70px 0;
+  padding: 71px 0 70px;
 }
 
 .faq__title {
   @include title;
 
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding: 61px 0 60px;
+  }
+
+  .faq__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 44px;
+  }
 }
