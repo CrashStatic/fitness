@@ -1,8 +1,5 @@
 .faq-content {
-  width: 320px;
-  padding: 0 15px;
   display: none;
-  margin: 0 auto;
 
   &--active {
     display: block;
@@ -149,11 +146,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .faq-content {
-    width: 768px;
-    padding: 0 45px;
-  }
-
   .faq-content__item {
     padding: 24px 0 22px;
 
@@ -218,11 +210,42 @@
     }
 
     &--active button:hover::after {
-      background-size: 20px 1px;
+      background-size: 20px 2px;
     }
 
     &--active button:focus-visible::after {
-      background-size: 20px 1px;
+      background-size: 20px 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq-content__item {
+    padding: 24px 0 21px;
+
+    button span {
+      max-width: 660px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    div {
+      max-width: 660px;
+    }
+
+    div br:last-child {
+      display: none;
+    }
+
+    div p {
+      padding-top: 23px;
+      margin-bottom: 0;
     }
   }
 }
