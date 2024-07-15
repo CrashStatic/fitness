@@ -25,8 +25,7 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
+    <!-- <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
 
     <main class="page-main">
@@ -650,6 +649,55 @@
           </button>
         </div>
       </section>
+
+      <div class="form-contacts" data-test="form">
+        <section class="form">
+          <div class="form__container">
+            <h2 class="form__title">Бесплатное занятие</h2>
+            <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__line">
+                <label>
+                  <span class="visually-hidden">Имя</span>
+                  <input class="form__input" type="text" name="name" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="form__line">
+                <label>
+                  <span class="visually-hidden">Телефон</span>
+                  <input class="form__input" type="tel" name="telephone" placeholder="Телефон" required>
+                </label>
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__info">
+            <div class="contacts__container">
+              <div class="contacts__item">
+                <span>Адрес:</span>
+                <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+              </div>
+              <div class="contacts__item">
+                <span>График работы:</span>
+                <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+              </div>
+            </div>
+            <div class="contacts__container">
+              <div class="contacts__item">
+                <span>Телефон:</span>
+                <a href="tel:88005555555">8&nbsp;800 555-55-55</a>
+              </div>
+              <div class="contacts__item">
+                <span>Email:</span>
+                <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </div>
+            </div>
+          </address>
+        </section>
+      </div>
 
     </main>
 
