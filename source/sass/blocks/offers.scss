@@ -51,13 +51,14 @@
   text-transform: uppercase;
   color: #1c3374;
   text-decoration: underline;
-  text-decoration-color: #1c3374;
+  text-decoration-color: #74819c;
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
   padding: 8px 10px;
 
   &:hover {
     opacity: 0.8;
+    text-decoration-color: hsla(224, 61%, 28%, 0.8);
   }
 
   &:focus {

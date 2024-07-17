@@ -658,14 +658,16 @@
               <div class="form__line">
                 <label>
                   <span class="visually-hidden">Имя</span>
-                  <input class="form__input" type="text" name="name" placeholder="Имя" required>
+                  <input class="form__input form__input--name" type="text" name="name" placeholder="Имя" autocomplete="name" required>
                 </label>
+                <span class="form__error form__error--name" aria-live="polite"></span>
               </div>
               <div class="form__line">
                 <label>
                   <span class="visually-hidden">Телефон</span>
-                  <input class="form__input" type="tel" name="telephone" placeholder="Телефон" required>
+                  <input class="form__input form__input--number" type="tel" name="telephone" placeholder="Телефон" autocomplete="tel" required>
                 </label>
+                <span class="form__error form__error--number" aria-live="polite"></span>
               </div>
               <button class="form__button" type="submit">Отправить</button>
             </form>
@@ -673,29 +675,31 @@
         </section>
 
         <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <address class="contacts__info">
-            <div class="contacts__container">
-              <div class="contacts__item">
-                <span>Адрес:</span>
-                <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+          <div class="contacts__container">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__info">
+              <div class="contacts__wrapper">
+                <div class="contacts__item">
+                  <span>Адрес:</span>
+                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                </div>
+                <div class="contacts__item">
+                  <span>График работы:</span>
+                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                </div>
               </div>
-              <div class="contacts__item">
-                <span>График работы:</span>
-                <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="contacts__wrapper">
+                <div class="contacts__item">
+                  <span>Телефон:</span>
+                  <a class="contacts__link" href="tel:88005555555">8&nbsp;800 555-55-55</a>
+                </div>
+                <div class="contacts__item">
+                  <span>Email:</span>
+                  <a class="contacts__link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+                </div>
               </div>
-            </div>
-            <div class="contacts__container">
-              <div class="contacts__item">
-                <span>Телефон:</span>
-                <a href="tel:88005555555">8&nbsp;800 555-55-55</a>
-              </div>
-              <div class="contacts__item">
-                <span>Email:</span>
-                <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-              </div>
-            </div>
-          </address>
+            </address>
+          </div>
         </section>
       </div>
 
