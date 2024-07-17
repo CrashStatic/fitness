@@ -71,6 +71,7 @@
 
 .contacts__link--disabled {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {

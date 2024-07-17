@@ -102,6 +102,7 @@
   &:disabled {
     opacity: 0.4;
     background: #ffffff;
+    pointer-events: none;
 
     &::after {
       border: 2px solid #102654;
