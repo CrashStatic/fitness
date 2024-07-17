@@ -30,9 +30,6 @@
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
-  // padding: 4px 9px;
-  // border: 1px solid transparent;
-  // margin-left: -10px;
 
   &:hover {
     text-decoration: underline;
@@ -47,7 +44,6 @@
   }
 
   &:focus-visible {
-    // border: 1px solid #ffffff;
     outline: 1px solid #ffffff;
     padding: 0 5px;
     margin-left: -5px;
