@@ -78,6 +78,7 @@
     width: 24px;
     height: 33px;
     background: url("/__spritemap#sprite-ruble-icon-view");
+    background-size: 24px 33px;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -186,6 +187,7 @@
     &::after {
       width: 30px;
       height: 42px;
+      background-size: 30px 42px;
     }
   }
 

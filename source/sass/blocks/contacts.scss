@@ -94,7 +94,7 @@
   }
 
   .contacts__wrapper {
-    min-width: 190px;
+    width: 190px;
     gap: 14px;
 
     &:not(:last-of-type) {
@@ -154,7 +154,7 @@
   }
 
   .contacts__wrapper {
-    min-width: 178px;
+    width: 178px;
 
     &:not(:last-of-type)::after {
       content: "";
