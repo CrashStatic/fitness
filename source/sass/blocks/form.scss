@@ -64,10 +64,6 @@
     &::placeholder {
       color: transparent;
     }
-
-    // &:invalid {
-    //   box-shadow: none;
-    // }
   }
 
   &:disabled {
@@ -185,8 +181,8 @@
   }
 
   .form__form {
-    grid-template-columns: repeat(2, 223px);
-    gap: 36px 31px;
+    grid-template-columns: repeat(2, 223.5px);
+    gap: 36px 30px;
   }
 
   .form__button {
