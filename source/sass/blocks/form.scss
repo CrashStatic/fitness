@@ -36,7 +36,7 @@
   padding-top: 9px;
   padding-bottom: 3px;
   border: 1px solid transparent;
-  box-shadow: 0 1px 0 0 #74819c;
+  border-bottom: 1px solid #74819c;
   outline: none;
 
   &::placeholder {
@@ -46,7 +46,7 @@
   }
 
   &:hover {
-    box-shadow: 0 1px 0 0 #ffffff;
+    border-bottom: 1px solid #ffffff;
   }
 
   &:focus,
@@ -76,7 +76,7 @@
   }
 
   &--invalid {
-    box-shadow: 0 1px 0 0 #ff121f;
+    border-bottom: 1px solid #ff121f;
   }
 }
 
