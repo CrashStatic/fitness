@@ -28,11 +28,13 @@
         <h2 class="visually-hidden">Промо-блок</h2>
 
         <header class="header">
-          <picture>
-            <source media="(min-width: 1366px)" type="image/svg" srcset="img/logo-desktop.svg" width="130" height="26">
-            <source media="(min-width: 768px)" type="image/svg" srcset="img/logo-tablet.svg" width="110" height="22">
-            <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип сайта Supergym" width="100" height="20">
-          </picture>
+          <div class="header__logo">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/svg" srcset="img/logo-desktop.svg" width="130" height="26">
+              <source media="(min-width: 768px)" type="image/svg" srcset="img/logo-tablet.svg" width="110" height="22">
+              <img src="img/logo-mobile.svg" alt="Логотип сайта Supergym" width="100" height="20">
+            </picture>
+          </div>
           <a class="header__number-phone" href="tel:88005555555">8&nbsp;800 555-55-55</a>
         </header>
 
@@ -73,14 +75,16 @@
         </div>
 
         <div class="about__visual-content">
-          <picture>
-            <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/gym-desktop.webp 1x, img/about/gym-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/about/gym-tablet.webp 1x, img/about/gym-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/about/gym-mobile.webp 1x, img/about/gym-mobile@2x.webp 2x">
-            <source media="(min-width: 1366px)" type="image/jpg" srcset="img/about/gym-desktop.jpg 1x, img/about/gym-desktop@2x.jpg 2x" width="660" height="400">
-            <source media="(min-width: 768px)" type="image/jpg" srcset="img/about/gym-tablet.jpg 1x, img/about/gym-tablet@2x.jpg 2x" width="678" height="345">
-            <img class="about__visual-image" src="img/about/gym-mobile.jpg" srcset="img/about/gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография тренажёрного зала Supergym">
-          </picture>
+          <div class="about__visual-image">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/gym-desktop.webp 1x, img/about/gym-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/about/gym-tablet.webp 1x, img/about/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/about/gym-mobile.webp 1x, img/about/gym-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" type="image/jpg" srcset="img/about/gym-desktop.jpg 1x, img/about/gym-desktop@2x.jpg 2x" width="660" height="400">
+              <source media="(min-width: 768px)" type="image/jpg" srcset="img/about/gym-tablet.jpg 1x, img/about/gym-tablet@2x.jpg 2x" width="678" height="345">
+              <img src="img/about/gym-mobile.jpg" srcset="img/about/gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография тренажёрного зала Supergym">
+            </picture>
+          </div>
           <div class="about__visual-video video">
             <picture>
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/about/video-preview-desktop.webp 1x, img/about/video-preview-desktop@2x.webp 2x">

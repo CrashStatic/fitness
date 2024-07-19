@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.header__logo {
+.header__logo img {
   width: 100px;
   height: 20px;
   display: block;
@@ -56,7 +56,7 @@
     padding: 30px 45px;
   }
 
-  .header__logo {
+  .header__logo img {
     width: 110px;
     height: 22px;
   }
@@ -75,9 +75,12 @@
   }
 
   .header__logo {
-    width: 130px;
-    height: 26px;
     margin-bottom: 2px;
+
+    img {
+      width: 130px;
+      height: 26px;
+    }
   }
 
   .header__number-phone {

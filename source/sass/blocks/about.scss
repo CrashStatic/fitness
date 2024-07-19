@@ -46,8 +46,12 @@
 }
 
 .about__visual-image {
-  display: block;
   margin-bottom: 36px;
+  object-fit: cover;
+
+  img {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
