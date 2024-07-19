@@ -11,7 +11,7 @@ const initFaqAccordion = () => {
     button.addEventListener('click', buttonHandler);
   });
 
-  function buttonHandler (e) {
+  function buttonHandler(e) {
     e.preventDefault();
     const currentBox = e.target.closest('.faq-content__item');
     const currentContent = currentBox.querySelector('div');
@@ -23,6 +23,10 @@ const initFaqAccordion = () => {
     } else {
       currentContent.style.maxHeight = 0;
     }
+
+    window.addEventListener('resize', () => {
+      currentContent.style.maxHeight = `${currentContent.scrollHeight}px`;
+    });
   }
 
   document.querySelector('.faq-content button').click();

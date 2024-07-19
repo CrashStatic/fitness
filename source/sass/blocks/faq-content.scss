@@ -94,10 +94,6 @@
     transition: max-height 0.3s;
   }
 
-  div br:last-child {
-    display: none;
-  }
-
   div p {
     margin: 0;
     padding-top: 20px;
@@ -151,14 +147,6 @@
 
     button br {
       display: none;
-    }
-
-    div br:first-child {
-      display: none;
-    }
-
-    div br:last-child {
-      display: block;
     }
 
     div p {
@@ -237,10 +225,6 @@
 
     div {
       max-width: 660px;
-    }
-
-    div br:last-child {
-      display: none;
     }
 
     div p {
