@@ -80,6 +80,11 @@
     color: #ffffff;
     text-decoration-color: #ffffff;
 
+    &:hover {
+      opacity: 0.8;
+      text-decoration-color: hsla(0, 0%, 100%, 0.8);
+    }
+
     &:focus {
       outline: none;
     }
