@@ -38,10 +38,6 @@
   p {
     margin: 0;
   }
-
-  br {
-    display: none;
-  }
 }
 
 .reviews__swiper {
@@ -197,14 +193,6 @@
       font-size: 16px;
       line-height: 24px;
     }
-
-    br {
-      display: block;
-
-      &:last-child {
-        display: none;
-      }
-    }
   }
 
   .reviews__button-prev {
@@ -241,18 +229,6 @@
 
     h3 {
       margin-top: 2px;
-    }
-
-    br {
-      display: none;
-
-      &:first-child {
-        display: block;
-      }
-
-      &:last-child {
-        display: block;
-      }
     }
   }
 }

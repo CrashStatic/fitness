@@ -22,14 +22,6 @@
   p:last-child {
     display: none;
   }
-
-  br {
-    display: block;
-
-    &:first-child {
-      display: none;
-    }
-  }
 }
 
 .about__title {
@@ -84,14 +76,6 @@
     text-align: center;
     margin: 0 auto;
     padding: 36px 0;
-
-    br {
-      display: none;
-
-      &:first-child {
-        display: block;
-      }
-    }
   }
 
   .about__visual-image {
@@ -128,20 +112,8 @@
     text-align: start;
     padding: 94px 0 0;
 
-    br {
-      display: none;
-
-      &:first-child {
-        display: none;
-      }
-    }
-
     p:last-child {
       display: block;
-
-      br {
-        display: block;
-      }
     }
   }
 }
