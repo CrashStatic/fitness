@@ -92,42 +92,34 @@
     }
   }
 
-  &--main {
-    color: #ffffff;
-
-    &::after {
-      background-color: #ffffff;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &:focus-visible {
-      outline: 1px solid #ffffff;
-
-      &::after {
-        display: none;
-      }
-    }
-
-    &:active {
-      outline: none;
-
-      &::after {
-        background-color: #ffffff;
-      }
-    }
-  }
-
   &:disabled,
   &--disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+}
+
+.offers__link--main {
+  color: #ffffff;
+
+  &::after {
+    background-color: #ffffff;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #ffffff;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 
