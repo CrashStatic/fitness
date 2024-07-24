@@ -203,4 +203,11 @@
   .footer__social {
     gap: 10px;
   }
+
+  .footer__social-link {
+    &--ok::before {
+      mask-size: 10px 15px;
+      margin-left: 1px;
+    }
+  }
 }
