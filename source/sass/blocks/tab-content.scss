@@ -112,6 +112,8 @@
   }
 
   &:active {
+    background: linear-gradient(97deg, #ed0233 18%, #003eb7 95%);
+    border: none;
     color: hsl(0, 0%, 100%, 0.7);
   }
 
