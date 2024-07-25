@@ -32,7 +32,7 @@ const initFaqAccordion = () => {
   document.querySelector('.faq-content button').click();
 };
 
-const faqInitTabs = () => {
+const initFaqTabs = () => {
   if (!faqTabsButtons || !faqTabsContents) {
     return;
   }
@@ -61,4 +61,4 @@ const faqInitTabs = () => {
   });
 };
 
-export { initFaqAccordion, faqInitTabs };
+export { initFaqAccordion, initFaqTabs };
