@@ -1,0 +1,235 @@
+.faq-content {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.faq-content__item {
+  padding: 20px 0;
+  border-bottom: 1px solid #74819c;
+
+  &:first-child {
+    border-top: 1px solid #74819c;
+  }
+
+  button {
+    font-family: $main-font;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #102654;
+    text-align: start;
+    cursor: pointer;
+    position: relative;
+
+    &:hover::after {
+      background: #1c3374;
+      background-image: url("/__spritemap#sprite-plus-white-icon-view");
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible::after {
+      background: #74819c;
+      border: 1px solid #1c3374;
+      background-image: url("/__spritemap#sprite-plus-white-icon-view");
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center;
+    }
+
+    &:disabled::after {
+      opacity: 0.3;
+      background: transparent;
+      background-image: url("/__spritemap#sprite-plus-view");
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center;
+    }
+  }
+
+  button span {
+    max-width: 238px;
+    display: block;
+  }
+
+  button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid #1c3374;
+    background-image: url("/__spritemap#sprite-plus-view");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center;
+  }
+
+  div {
+    max-width: 238px;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s;
+  }
+
+  div p {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  &--active button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 8px;
+    background: #1c3373;
+    background-image: url("/__spritemap#sprite-minus-icon-view");
+    background-repeat: no-repeat;
+    background-size: 14px 1px;
+    background-position: center;
+  }
+
+  &--active button:hover::after {
+    background: #1c3374;
+    background-image: url("/__spritemap#sprite-minus-icon-view");
+    background-repeat: no-repeat;
+    background-size: 14px 1px;
+    background-position: center;
+  }
+
+  &--active button:focus-visible::after {
+    background: #74819c;
+    border: 1px solid #1c3374;
+    background-image: url("/__spritemap#sprite-minus-icon-view");
+    background-repeat: no-repeat;
+    background-size: 14px 1px;
+    background-position: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq-content__item br {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq-content__item {
+    padding: 24px 0 22px;
+
+    button br {
+      display: none;
+    }
+
+    div p {
+      margin: 0;
+      padding-top: 9px;
+      margin-bottom: 1px;
+    }
+
+    button {
+      font-size: 22px;
+      line-height: 22px;
+      min-height: 40px;
+
+      &:hover::after {
+        background-size: 20px 20px;
+      }
+
+      &:focus-visible::after {
+        background-size: 20px 20px;
+      }
+
+      &:disabled::after {
+        background-size: 20px 20px;
+      }
+    }
+
+    button span {
+      max-width: 500px;
+    }
+
+    div {
+      max-width: 560px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    button::after {
+      width: 40px;
+      height: 40px;
+      background-size: 20px 20px;
+      transform: translateY(-52%);
+    }
+
+    &--active button::after {
+      width: 40px;
+      height: 40px;
+      background-size: 20px 2px;
+      transform: translateY(-52%);
+    }
+
+    &--active button:hover::after {
+      background-size: 20px 2px;
+    }
+
+    &--active button:focus-visible::after {
+      background-size: 20px 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq-content__item {
+    padding: 24px 0 21px;
+
+    button span {
+      max-width: 660px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    div {
+      max-width: 660px;
+    }
+
+    div p {
+      padding-top: 23px;
+      margin-bottom: 0;
+    }
+  }
+}

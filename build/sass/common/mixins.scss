@@ -1,0 +1,32 @@
+@mixin list {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button {
+  display: block;
+  font-family: $main-font;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@mixin title {
+  font-family: $variable-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+@mixin subtitle {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}

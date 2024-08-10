@@ -1,0 +1,41 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+@import "vendor/swiper-vars";
+
+/* GLOBAL */
+@import "./common/global";
+@import "./common/viewports";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/mixins";
+
+/* BLOCKS */
+@import "./blocks/page";
+@import "./blocks/visually-hidden";
+@import "./blocks/page-main";
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/promo";
+@import "./blocks/about";
+@import "./blocks/video";
+@import "./blocks/price";
+@import "./blocks/tab-button";
+@import "./blocks/tab-content";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/features";
+@import "./blocks/info";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/faq-button";
+@import "./blocks/faq-content";
+@import "./blocks/reviews";
+@import "./blocks/form-contacts";
+@import "./blocks/form";
+@import "./blocks/contacts";
+@import "./blocks/page-footer";
+@import "./blocks/footer";
+@import "./blocks/swiper-button";
